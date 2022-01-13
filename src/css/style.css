@@ -110,6 +110,23 @@ body {
     text-decoration: none;
 }
 
+.menu .menu__item.active {
+    position: relative;
+    border-bottom: 3px solid #F41526;
+    padding-bottom: 3px;
+}
+
+.menu .menu__item.active:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, #FF0505 -397.7%, rgba(223, 56, 109, 0) 54.02%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    width: 100%;
+    height: 87px;
+}
+
 .menu .menu__item.active .menu__link  {
     font-weight: 700;
 }
@@ -123,6 +140,7 @@ body {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    white-space: nowrap;
 }
 
 .activity {
@@ -236,6 +254,17 @@ body {
 }
 
 /* content */
+.information {
+    padding-top: 163px;
+    padding-bottom: 112.5px;
+}
+
+.information__main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
 .title_indent {
     margin-bottom: 34px;
 }
@@ -247,7 +276,11 @@ body {
     font-size: 16px;
     line-height: 146.28%;
     color: #FFFFFF;
-    /*transform: rotate(90deg);*/
+    transform: rotate(90deg);
+    white-space: nowrap;
+    position: absolute;
+    right: -60px;
+    top: 66.44px;
 }
 
 .contactButton span {
@@ -259,9 +292,10 @@ body {
     margin-left: 8px;
 }
 
-.paragraph {
+.information__paragraph {
     font-family: 'Alata', sans-serif;
     font-size: 24px;
     line-height: 146%;
     color: #FFFFFF;
+    max-width: 889px;
 }
