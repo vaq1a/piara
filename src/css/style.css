@@ -74,14 +74,8 @@ body {
     margin-bottom: 50px;
 }
 
-/*Header*/
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 41px 0;
-}
-
+/*Components*/
+/*logo*/
 .logo {
     max-width: 169px;
     width: 100%;
@@ -95,6 +89,7 @@ body {
     border-style: none;
 }
 
+/*menu*/
 .menu {
     display: flex;
 }
@@ -131,7 +126,7 @@ body {
     font-weight: 700;
 }
 
-/*components*/
+/*title*/
 .title {
     font-family: 'Druk Cyr', sans-serif;
     font-size: 72.66px;
@@ -143,6 +138,7 @@ body {
     white-space: nowrap;
 }
 
+/*activity*/
 .activity {
     font-size: 24px;
     line-height: 142%;
@@ -150,6 +146,7 @@ body {
     color: #FFFFFF;
     padding-left: 45px;
     position: relative;
+    max-width: 400px;
 }
 
 .activity::before {
@@ -164,6 +161,7 @@ body {
     background: #FF2A66;
 }
 
+/*action platform*/
 .actionPlatform {
     display: flex;
     justify-content: space-between;
@@ -180,20 +178,21 @@ body {
     color: #FFFFFF;
 }
 
-.advantages {
+/*advantages card*/
+.advantagesCard {
     display: flex;
 }
 
-.advantages__icon {
+.advantagesCard__icon {
     margin-right: 40px;
 }
 
-.advantages__content {
+.advantagesCard__content {
     max-width: 253px;
     width: 100%;
 }
 
-.advantages__title {
+.advantagesCard__title {
     font-size: 18px;
     line-height: 153%;
     font-weight: 600;
@@ -201,7 +200,7 @@ body {
     margin-bottom: 5px;
 }
 
-.advantages__description {
+.advantagesCard__description {
     font-size: 14px;
     line-height: 154%;
     font-weight: 500;
@@ -209,6 +208,7 @@ body {
     opacity: 0.7;
 }
 
+/* about card */
 .card {
     display: flex;
     flex-direction: column;
@@ -253,23 +253,75 @@ body {
     color: #FF3030;
 }
 
-/* content */
-.information {
+/*padWithTitle*/
+.padWithTitle {
+    position: relative;
+}
+
+.padWithTitle_xs {
+    max-width: 617px;
+    width: 100%;
+}
+
+.padWithTitle_lg {
+    max-width: 717px;
+    width: 100%;
+}
+
+.padWithTitle__bg {
+    width: 100%;
+}
+
+.padWithTitle__bg img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.padWithTitle__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Content */
+/*header*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 41px 0;
+}
+
+/* solutions */
+.solutions {
     padding-top: 163px;
     padding-bottom: 112.5px;
 }
 
-.information__main {
+.solutions__header {
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-.title_indent {
+.solutions__title {
     margin-bottom: 34px;
 }
 
-.contactButton {
+.solutions__paragraph {
+    font-family: 'Alata', sans-serif;
+    font-size: 24px;
+    line-height: 146%;
+    color: #FFFFFF;
+    max-width: 889px;
+    margin-bottom: 200px;
+}
+
+.solutions__contact {
     display: flex;
     align-items: center;
     font-family: 'Inter', sans-serif;
@@ -283,7 +335,7 @@ body {
     top: 66.44px;
 }
 
-.contactButton span {
+.solutions__contact > span {
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -292,10 +344,77 @@ body {
     margin-left: 8px;
 }
 
-.information__paragraph {
-    font-family: 'Alata', sans-serif;
-    font-size: 24px;
-    line-height: 146%;
+.solutions__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.solutions__name {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 146.28%;
     color: #FFFFFF;
-    max-width: 889px;
+    margin-top: 8px;
+}
+
+.solutions__arrow {
+    width: 44px;
+    height: 85px;
+}
+
+.solutions__arrow svg {
+    color: #FFFFFF;
+}
+
+/* features */
+.features {
+    padding-top: 112.5px;
+    padding-bottom: 157px;
+}
+
+.features__title {
+    margin-bottom: 49px;
+    margin-left: 104px;
+}
+
+.featuresList {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 196px;
+    column-gap: 378px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: inset 0 0 68px rgba(255, 255, 255, 0.05), inset 0 1px 4px rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(86px);
+    border-radius: 17px;
+    padding: 102px 0 102px 104px;
+}
+
+/* advantages */
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.advantagesList {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 98px;
+    column-gap: 105px;
+    max-width: 753px;
+}
+
+/* about */
+.about {
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+
+.about__title {
+    margin-right: 312px;
 }
