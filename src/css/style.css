@@ -503,6 +503,7 @@ body.disableScroll {
     right: -6rem;
     top: 6.644rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .presentation__contact > span {
@@ -614,6 +615,21 @@ body.disableScroll {
     right: 0;
     z-index: -1;
     width: 100%;
+}
+
+.solutionsArcBg {
+    position: absolute;
+    bottom: 15.7rem;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 40%;
+}
+
+.solutionsArcBg img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .video-container, .video-desktop {
@@ -755,6 +771,10 @@ body.disableScroll {
     .solutions {
         padding-top: 10rem;
         padding-bottom: 10rem;
+    }
+
+    .solutionsArcBg, .solutionsBg {
+        bottom: 10rem;
     }
 
     .solutions__title {
@@ -1050,6 +1070,10 @@ body.disableScroll {
     .solutions {
         padding-top: 5rem;
         padding-bottom: 8rem;
+    }
+
+    .solutionsArcBg, .solutionsBg {
+        bottom: 8rem;
     }
 
     .solutions__title {
