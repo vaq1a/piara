@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -34,29 +34,29 @@
                         </div>
                         <div class="navigation">
                             <ul class="menu">
-                                <li class="menu__item active">
-                                    <a href="#" class="menu__link">
+                                <li class="menu__item">
+                                    <a href="#solutions" data-menu-item="solutions" class="menu__link active">
                                         Solutions
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="#features" data-menu-item="features" class="menu__link">
                                         Features
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="#advantages" data-menu-item="advantages" class="menu__link">
                                         Advantages
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="#about" data-menu-item="about" class="menu__link">
                                         About
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
-                                        Contat Us
+                                    <a href="#" class="menu__link" onclick="return false;">
+                                        Contact Us
                                     </a>
                                 </li>
                             </ul>
@@ -103,7 +103,7 @@
             </div>
         </div>
 
-        <div class="solutions">
+        <div id="solutions" class="section solutions">
             <div class="container">
                 <div class="title solutions__title">
                     WHAT WE DO
@@ -123,69 +123,77 @@
                     </div>
                 </div>
             </div>
-            <img src="./images/solutionsBg.png" class="solutionsBg" alt="Solutions background" />
+            <div class="video-container solutionsBg">
+                <video class="video-desktop" autoplay muted loop>
+                    <source src="./images/solutionVideoBg.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </div>
+<!--            <img src="./images/solutionsBg.png" class="solutionsBg" alt="Solutions background" />-->
         </div>
 
-        <div class="features">
+        <div id="features" class="section features">
             <div class="container">
                 <div class="title features__title">
                     Piara in action
                 </div>
                 <div class="featuresBlocks">
-                    <div class="featuresBlocks__cell">
-                        <div class="featuresCard"></div>
-                        <div class="featuresCard featuresCard_withBorder">
-                            <div class="featuresCard__title">
-                                REGULATORS
+                    <div class="wow animate__animated animate__fadeInUp" data-wow-delay="3s">
+                        <div class="featuresBlocks__cell">
+                            <div class="featuresCard"></div>
+                            <div class="featuresCard featuresCard_withBorder">
+                                <div class="featuresCard__title">
+                                    REGULATORS
+                                </div>
+                                <div class="featuresCard__paragraph">
+                                    Third Party Compliance Reporting & Data Exchange
+                                </div>
                             </div>
-                            <div class="featuresCard__paragraph">
-                                Third Party Compliance Reporting & Data Exchange
+                            <div class="featuresCard featuresCard_withBorder">
+                                <div class="featuresCard__title">
+                                    EXTERNAL VENDORS
+                                </div>
+                                <div class="featuresCard__paragraph">
+                                    Vendor Recommendation & Marketplace
+                                </div>
                             </div>
                         </div>
-                        <div class="featuresCard featuresCard_withBorder">
-                            <div class="featuresCard__title">
-                                EXTERNAL VENDORS
+                        <div class="border featuresBlocks__border featuresBlocks__border_mobile"></div>
+                        <div class="featuresBlocks__cell">
+                            <div class="featuresCard featuresCard_withBorder">
+                                <div class="featuresCard__title">
+                                    C-suite
+                                </div>
+                                <div class="featuresCard__paragraph">
+                                    Business Management Reporting Exports
+                                </div>
                             </div>
-                            <div class="featuresCard__paragraph">
-                                Vendor Recommendation & Marketplace
+                            <div class="featuresCard featuresCard_withBorder">
+                                <div class="featuresCard__title">
+                                    COMPLIANCE
+                                </div>
+                                <div class="featuresCard__paragraph">
+                                    Internal Compliance Reporting & Alerts
+                                </div>
+                            </div>
+                            <div class="featuresCard featuresCard_withBorder">
+                                <div class="featuresCard__title">
+                                    SECURITY
+                                </div>
+                                <div class="featuresCard__paragraph">
+                                    Dashboard, Remediation Intelligence & Tasks
+                                </div>
                             </div>
                         </div>
+                        <div class="border featuresBlocks__border featuresBlocks__border_desktop"></div>
                     </div>
-                    <div class="border featuresBlocks__border featuresBlocks__border_mobile"></div>
-                    <div class="featuresBlocks__cell">
-                        <div class="featuresCard featuresCard_withBorder">
-                            <div class="featuresCard__title">
-                                C-suite
-                            </div>
-                            <div class="featuresCard__paragraph">
-                                Business Management Reporting Exports
-                            </div>
-                        </div>
-                        <div class="featuresCard featuresCard_withBorder">
-                            <div class="featuresCard__title">
-                                COMPLIANCE
-                            </div>
-                            <div class="featuresCard__paragraph">
-                                Internal Compliance Reporting & Alerts
-                            </div>
-                        </div>
-                        <div class="featuresCard featuresCard_withBorder">
-                            <div class="featuresCard__title">
-                                SECURITY
-                            </div>
-                            <div class="featuresCard__paragraph">
-                                Dashboard, Remediation Intelligence & Tasks
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border featuresBlocks__border featuresBlocks__border_desktop"></div>
-                    <div class="featuresBlocks__cell featuresBlocks__cell_border">
+                    <div class="featuresBlocks__cell featuresBlocks__cell_border wow animate__animated animate__fadeInUp" data-wow-delay="2s">
                         <div class="featuresCard featuresCard_onlyText featuresCard_center">
                             Risk Prioritization
                             Loss Exposure Calculation & Alerts
                         </div>
                     </div>
-                    <div class="featuresBlocks__cell featuresBlocks__cell_onlyText">
+                    <div class="featuresBlocks__cell featuresBlocks__cell_onlyText wow animate__animated animate__fadeInUp" data-wow-delay="1s">
                         <div class="featuresCard featuresCard_onlyText featuresCard_onlyTextWithBorder">
                             Multi-Asset & Open-Source Integration
                         </div>
@@ -200,7 +208,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="actionPlatform">
+                <div class="actionPlatform wow animate__animated animate__fadeInUp" data-wow-delay="300ms">
                     <div class="actionPlatform__item">CODE</div>
                     <div class="actionPlatform__item">SOFTWARE</div>
                     <div class="actionPlatform__item">LIBRARIES</div>
@@ -211,7 +219,7 @@
             </div>
         </div>
 
-        <div class="advantages">
+        <div id="advantages" class="section advantages">
             <div class="container">
                 <div class="advantages__container">
                     <div class="advantagesList">
@@ -313,7 +321,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="padWithTitle padWithTitle_lg">
+                    <div class="padWithTitle padWithTitle_lg rellax">
                         <div class="padWithTitle__bg">
                             <img src="./images/advantages.png" alt="Advantages">
                         </div>
@@ -325,10 +333,10 @@
             </div>
         </div>
 
-        <div class="about">
+        <div id="about" class="section about">
             <div class="container">
                 <div class="about__container">
-                    <div class="padWithTitle padWithTitle_xs about__title">
+                    <div class="padWithTitle padWithTitle_xs about__title rellax">
                         <div class="padWithTitle__bg">
                             <img src="./images/about.png" alt="About">
                         </div>
@@ -372,30 +380,30 @@
                     </a>
                     <div class="footerActions">
                         <ul class="footerMenu">
-                            <li class="footerMenu__item active">
-                                <a href="#" class="footerMenu__link">
+                            <li class="footerMenu__item">
+                                <a href="#solutions" data-menu-item="solutions" class="footerMenu__link">
                                     Solutions
                                 </a>
                             </li>
                             <li class="footerMenu__item">
-                                <a href="#" class="footerMenu__link">
+                                <a href="#features" data-menu-item="features" class="footerMenu__link">
                                     Features
                                 </a>
                             </li>
                             <li class="footerMenu__item">
-                                <a href="#" class="footerMenu__link">
+                                <a href="#advantages" data-menu-item="advantages" class="footerMenu__link">
                                     Advantages
                                 </a>
                             </li>
                         </ul>
                         <ul class="footerMenu">
                             <li class="footerMenu__item">
-                                <a href="#" class="footerMenu__link">
+                                <a href="#" class="footerMenu__link" onclick="return false;">
                                     Contact Us
                                 </a>
                             </li>
                             <li class="footerMenu__item">
-                                <a href="#" class="footerMenu__link">
+                                <a href="#about" data-menu-item="about" class="footerMenu__link active">
                                     About
                                 </a>
                             </li>
@@ -408,21 +416,10 @@
             </div>
             <img src="./images/footerBg.png" class="footerBg" alt="Footer background">
         </footer>
-        <script>
-            const openMobileMenuButton = document.querySelector('.headerMenu__trigger'),
-                  closeMobileMenuButton = document.querySelector('.headerMenu__close'),
-                  mobileMenu = document.querySelector('.headerMenu'),
-                  bodyElement = document.querySelector('body');
 
-            openMobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.add('active');
-                bodyElement.classList.add('disableScroll');
-            });
-
-            closeMobileMenuButton.addEventListener('click', () => {
-               mobileMenu.classList.remove('active');
-                bodyElement.classList.remove('disableScroll');
-            });
-        </script>
+        <script src="./js/simpleParallax.min.js"></script>
+        <script src="./js/mobile-detect.min.js"></script>
+        <script src="./js/wow.min.js"></script>
+        <script src="./js/script.js"></script>
 </body>
 </html>
