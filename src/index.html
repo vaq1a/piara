@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
         <header class="header">
             <div class="container">
                 <div class="header__container">
@@ -35,7 +34,7 @@
                         <div class="navigation">
                             <ul class="menu">
                                 <li class="menu__item">
-                                    <a href="#solutions" data-menu-item="solutions" class="menu__link active">
+                                    <a href="#solutions" data-menu-item="solutions" class="menu__link">
                                         Solutions
                                     </a>
                                 </li>
@@ -419,7 +418,7 @@
                                 </a>
                             </li>
                             <li class="footerMenu__item">
-                                <a href="#about" data-menu-item="about" class="footerMenu__link active">
+                                <a href="#about" data-menu-item="about" class="footerMenu__link">
                                     About
                                 </a>
                             </li>
@@ -430,7 +429,10 @@
                     </div>
                 </div>
             </div>
-            <img src="./images/footerBg.png" class="footerBg" alt="Footer background">
+            <picture>
+                <source media="(max-width: 767px)" srcset="./images/footerBg_xs.png">
+                <img src="./images/footerBg.png" class="footerBg" alt="Footer background">
+            </picture>
         </footer>
 
         <script src="./js/simpleParallax.min.js"></script>

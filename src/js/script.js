@@ -30,13 +30,14 @@ closeMobileMenuButton.addEventListener('click', () => {
 
 // anchors and intersection observer
 const anchors = document.querySelectorAll('a[data-menu-item]');
-const anchorsHeader = document.querySelectorAll('a.menu__link[data-menu-item]');
-const sections = document.querySelectorAll('div.section');
+// const anchorsHeader = document.querySelectorAll('a.menu__link[data-menu-item]');
+// const sections = document.querySelectorAll('div.section');
 
 for (let anchor of anchors) {
+    console.log(anchor);
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
+        console.log('click');
         const blockID = anchor.getAttribute('href');
 
         document.querySelector(blockID).scrollIntoView({
@@ -51,13 +52,13 @@ for (let anchor of anchors) {
     })
 }
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting) {
-            anchorsHeader.forEach(el => el.classList.remove("active"));
-            document.querySelectorAll(`a[data-menu-item=${entry.target.id}]`)[0].classList.add('active');
-        }
-    });
-});
-
-sections.forEach(target => observer.observe(target));
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         if(entry.isIntersecting) {
+//             anchorsHeader.forEach(el => el.classList.remove("active"));
+//             document.querySelectorAll(`a[data-menu-item=${entry.target.id}]`)[0].classList.add('active');
+//         }
+//     });
+// });
+//
+// sections.forEach(target => observer.observe(target));
