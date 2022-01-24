@@ -744,13 +744,17 @@ body.disableScroll {
     width: 65%;
 }
 
-@media (max-width: 1560px) {
+@media (max-width: 1466px) {
+    .container {
+        max-width: 110.7rem;
+    }
+
     .logo {
         max-width: 11.8rem;
     }
 
     .title {
-        font-size: 3.93575rem;
+        font-size: 5rem;
         line-height: 119.8%;
     }
 
@@ -770,7 +774,7 @@ body.disableScroll {
     }
 
     .presentation__paragraph {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         line-height: 2.4rem;
         margin-bottom: 5.8rem;
     }
@@ -802,20 +806,20 @@ body.disableScroll {
 
     .solutionsList {
         justify-content: space-between;
-        padding: 5.8rem;
-        row-gap: 11.2rem;
+        padding: 7.4rem;
+        row-gap: 14.2rem;
         column-gap: 0.1rem;
     }
 
     .activity {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         line-height: 150%;
-        padding-left: 2.6rem;
+        padding-left: 3.2rem;
     }
 
     .activity:before {
-        width: 0.6rem;
-        height: 0.6rem;
+        width: 0.9rem;
+        height: 0.9rem;
     }
 
     /*features*/
@@ -911,13 +915,13 @@ body.disableScroll {
     }
 
     .padWithTitle_lg {
-        max-width: 38rem;
+        max-width: 50rem;
     }
 
     .advantagesList {
-        max-width: 52.3rem;
-        row-gap: 1.8rem;
-        column-gap: 3.3rem;
+        max-width: 53.5rem;
+        row-gap: 6.8rem;
+        column-gap: 4.4rem;
     }
 
     .advantagesCard__icon {
@@ -933,9 +937,9 @@ body.disableScroll {
     }
 
     .advantagesCard__title {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         line-height: 122%;
-        margin-bottom: 0.7rem;
+        margin-bottom: 0.3rem;
     }
 
     .advantagesCard__description {
@@ -958,32 +962,32 @@ body.disableScroll {
     }
 
     .padWithTitle_xs {
-        max-width: 32.6rem;
+        max-width: 45.9rem;
     }
 
     .card {
-        max-width: 35.7rem;
+        max-width: 40.3rem;
         padding-bottom: 0.4rem;
         border-width: 0.2rem;
     }
 
     .card__description {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         line-height: 180.8%;
         margin-bottom: 2rem;
     }
 
     .card__lable:not(:last-child) {
-        margin-right: 2.4rem;
+        margin-right: 2.8rem;
     }
 
     .card__lableTitle {
-        font-size: 1.11192rem;
+        font-size: 1.4rem;
         line-height: 146.3%;
     }
 
     .card__lableContent {
-        font-size: 1.48256rem;
+        font-size: 1.8rem;
         line-height: 146.3%;
     }
 
@@ -1000,6 +1004,82 @@ body.disableScroll {
     .footerMenu__item .footerMenu__link {
         font-size: 1.2rem;
         line-height: 146.28%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    /*presentation*/
+    .presentation .title {
+        font-size: 4rem;
+        line-height: 119.8%;
+    }
+
+    .presentation__paragraph {
+        font-size: 1.6rem;
+    }
+
+    /*solutions*/
+    .solutionsList {
+        padding: 5.8rem;
+        row-gap: 11.2rem;
+    }
+
+    .activity {
+        font-size: 1.6rem;
+        line-height: 150%;
+        padding-left: 2.6rem;
+    }
+
+    .activity:before {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+
+    /*advantages*/
+    .padWithTitle_lg {
+        max-width: 38rem;
+    }
+
+    .advantagesList {
+        max-width: 52.3rem;
+        row-gap: 1.8rem;
+        column-gap: 3.3rem;
+    }
+
+    .advantagesCard__title {
+        font-size: 1.6rem;
+        margin-bottom: 0.7rem;
+    }
+
+    /*about*/
+    .padWithTitle_xs {
+        max-width: 32.6rem;
+    }
+
+    .card {
+        max-width: 35.7rem;
+    }
+
+    .card__description {
+        font-size: 1.6rem;
+        line-height: 180.8%;
+        margin-bottom: 2rem;
+    }
+
+    .card__lable:not(:last-child) {
+        margin-right: 2.4rem;
+    }
+
+    .card__lableTitle {
+        font-size: 1.11192rem;
+    }
+
+    .card__lableContent {
+        font-size: 1.48256rem;
     }
 }
 
