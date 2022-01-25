@@ -16,6 +16,10 @@ html {
     box-sizing: border-box;
 }
 
+.upperText {
+    text-transform: uppercase;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -270,6 +274,7 @@ body.disableScroll {
     padding-left: 4.5rem;
     position: relative;
     max-width: 40rem;
+    z-index: 3;
 }
 
 .activity::before {
@@ -785,6 +790,20 @@ body.disableScroll {
     -webkit-backdrop-filter: blur(8.6rem);
     border-radius: 1.7rem;
     padding: 10.2rem 0 10.2rem 10.4rem;
+}
+
+@-moz-document url-prefix() {
+    .solutionsList::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        filter: blur(4rem);
+        background: rgba(26, 16, 16, 0.94);
+        z-index: 2;
+    }
 }
 
 /* advantages */
