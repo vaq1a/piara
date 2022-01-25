@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
 html {
@@ -5,6 +12,7 @@ html {
 }
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -83,6 +91,7 @@ body.disableScroll {
 .container {
     /*border: 1px solid red;*/
     max-width: 156rem;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
     padding: 0 2rem;
@@ -106,6 +115,8 @@ body.disableScroll {
 
 /*menu*/
 .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -136,7 +147,11 @@ body.disableScroll {
     display: block;
     position: absolute;
     bottom: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-397.7%, #FF0505), color-stop(54.02%, rgba(223, 56, 109, 0)));
+    background: -o-linear-gradient(top, #FF0505 -397.7%, rgba(223, 56, 109, 0) 54.02%);
     background: linear-gradient(180deg, #FF0505 -397.7%, rgba(223, 56, 109, 0) 54.02%);
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+    -ms-transform: matrix(1, 0, 0, -1, 0, 0);
     transform: matrix(1, 0, 0, -1, 0, 0);
     width: 100%;
     height: 8.7rem;
@@ -148,7 +163,12 @@ body.disableScroll {
 
 /*footerMenu*/
 .footerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -190,7 +210,11 @@ body.disableScroll {
 }
 
 .headerMenu.active .headerMenu__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -199,6 +223,8 @@ body.disableScroll {
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -207,6 +233,9 @@ body.disableScroll {
 }
 
 .headerMenu.active .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
 }
@@ -225,8 +254,8 @@ body.disableScroll {
     font-family: 'Druk Cyr', sans-serif;
     font-size: 7.266rem;
     line-height: 119.8%;
-    background-image: linear-gradient(90.19deg, #FF2966 11.22%, #FF3750 26.02%, #FF9C40 50.66%, #FF6122 74.93%, #FF763F 74.93%);
-    color: transparent;
+    background-image: -o-linear-gradient(359.81deg, #FF2966 11.22%, #FF3750 26.02%, #FF9C40 50.66%, #FF6122 74.93%, #FF763F 74.93%);
+    background-image: linear-gradient(90.19deg, #FF2966 11.22%, #FF3750 26.02%, #FF9C40 50.66%, #FF6122 74.93%, #FF763F 74.93%);    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     white-space: nowrap;
@@ -257,11 +286,18 @@ body.disableScroll {
 
 /*action platform*/
 .actionPlatform {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 2.4rem 12.5rem;
-    background: linear-gradient(90.19deg, #FF2966 11.22%, #FF3750 26.02%, #FF9C40 50.66%, #FF6122 74.93%, #e9642e 74.93%);
+    background: -o-linear-gradient(359.81deg, #FF2966 11.22%, #FF3750 26.02%, #FF9C40 50.66%, #FF7741 74.93%, #FF763F 74.93%);
+    background: linear-gradient(90.19deg, #FF2966 11.22%, #FF3750 26.02%, #FF9C40 50.66%, #FF7741 74.93%, #FF763F 74.93%);
     border-radius: 0.4rem;
 }
 
@@ -274,6 +310,8 @@ body.disableScroll {
 
 /*advantages card*/
 .advantagesCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -304,7 +342,12 @@ body.disableScroll {
 
 /* about card */
 .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-bottom: 1.3rem;
     border-bottom: 0.3rem solid rgba(255, 255, 255, 0.2);
@@ -320,11 +363,18 @@ body.disableScroll {
 }
 
 .card__lables {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .card__lable {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -371,6 +421,7 @@ body.disableScroll {
     max-height: 100%;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -378,7 +429,10 @@ body.disableScroll {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    display: inline-table;
 }
 
 /*featuresCard*/
@@ -401,6 +455,8 @@ body.disableScroll {
     background-color: #474246;
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: -8.6rem;
 }
@@ -420,6 +476,8 @@ body.disableScroll {
     background-color: #474246;
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: -10.2rem;
 }
@@ -466,8 +524,14 @@ body.disableScroll {
 }
 
 .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -479,7 +543,11 @@ body.disableScroll {
 }
 
 .presentation__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
 }
@@ -498,12 +566,18 @@ body.disableScroll {
 }
 
 .presentation__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     line-height: 146.28%;
     color: #FFFFFF;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     white-space: nowrap;
     position: absolute;
@@ -523,7 +597,11 @@ body.disableScroll {
 }
 
 .presentation__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 50%;
 }
@@ -539,15 +617,30 @@ body.disableScroll {
 .presentation__arrow {
     width: 4.4rem;
     height: 8.5rem;
+    -webkit-transform: translate3d(0, -30%, 0);
     transform: translate3d(0, -30%, 0);
+    -webkit-animation: spin 1s infinite linear;
     animation: spin 1s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    0%, 100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, 30%);
+        transform: translate(0, 30%);
+    }
 }
 
 @keyframes spin {
     0%, 100% {
+        -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
     }
     50% {
+        -webkit-transform: translate(0, 30%);
         transform: translate(0, 30%);
     }
 }
@@ -568,13 +661,24 @@ body.disableScroll {
 }
 
 .featuresBlocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .featuresBlocks__cell {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
 }
@@ -590,6 +694,8 @@ body.disableScroll {
     background-color: #474246;
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: -6.4rem;
 }
@@ -615,6 +721,8 @@ body.disableScroll {
     background-color: #474246;
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: -5.3rem;
 }
@@ -660,12 +768,18 @@ body.disableScroll {
 }
 
 .solutionsList {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: relative;
     row-gap: 19.6rem;
+    -webkit-column-gap: 37.8rem;
+    -moz-column-gap: 37.8rem;
     column-gap: 37.8rem;
     background: rgba(255, 255, 255, 0.03);
+    -webkit-box-shadow: inset 0 0 6.8rem rgba(255, 255, 255, 0.05), inset 0 0.1rem 0.4rem rgba(255, 255, 255, 0.15);
     box-shadow: inset 0 0 6.8rem rgba(255, 255, 255, 0.05), inset 0 0.1rem 0.4rem rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8.6rem);
     -webkit-backdrop-filter: blur(8.6rem);
@@ -680,15 +794,26 @@ body.disableScroll {
 }
 
 .advantages__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .advantagesList {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     row-gap: 9.8rem;
+    -webkit-column-gap: 10.5rem;
+    -moz-column-gap: 10.5rem;
     column-gap: 10.5rem;
     max-width: 75.3rem;
 }
@@ -700,7 +825,11 @@ body.disableScroll {
 }
 
 .about__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -725,7 +854,11 @@ body.disableScroll {
 }
 
 .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -739,7 +872,11 @@ body.disableScroll {
 }
 
 .footerActions {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 65%;
 }
@@ -805,9 +942,13 @@ body.disableScroll {
     }
 
     .solutionsList {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 7.4rem;
         row-gap: 14.2rem;
+        -webkit-column-gap: 0.1rem;
+        -moz-column-gap: 0.1rem;
         column-gap: 0.1rem;
     }
 
@@ -921,6 +1062,8 @@ body.disableScroll {
     .advantagesList {
         max-width: 53.5rem;
         row-gap: 6.8rem;
+        -webkit-column-gap: 4.4rem;
+        -moz-column-gap: 4.4rem;
         column-gap: 4.4rem;
     }
 
@@ -958,6 +1101,8 @@ body.disableScroll {
     }
 
     .about__container {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
@@ -1047,6 +1192,8 @@ body.disableScroll {
     .advantagesList {
         max-width: 52.3rem;
         row-gap: 1.8rem;
+        -webkit-column-gap: 3.3rem;
+        -moz-column-gap: 3.3rem;
         column-gap: 3.3rem;
     }
 
@@ -1097,6 +1244,8 @@ body.disableScroll {
     }
 
     .advantagesList {
+        -webkit-column-gap: 1.7rem;
+        -moz-column-gap: 1.7rem;
         column-gap: 1.7rem;
     }
 
@@ -1111,6 +1260,8 @@ body.disableScroll {
     .solutionsList {
         padding: 6rem 2rem;
         row-gap: 4.9rem;
+        -webkit-column-gap: 0;
+        -moz-column-gap: 0;
         column-gap: 0;
     }
 
@@ -1194,6 +1345,9 @@ body.disableScroll {
     }
 
     .featuresBlocks  .featuresBlocks__cell:nth-child(3) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1250,6 +1404,9 @@ body.disableScroll {
     }
 
     .featuresBlocks__cell.featuresBlocks__cell_onlyText {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1285,6 +1442,8 @@ body.disableScroll {
         background-color: #474246;
         position: absolute;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         bottom: -2.8rem;
     }
@@ -1302,17 +1461,24 @@ body.disableScroll {
     }
 
     .advantages__container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     .advantages__container .padWithTitle_lg {
         max-width: 100%;
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
         order: -1;
         margin-bottom: 3rem;
     }
 
     .advantagesList {
         max-width: 100%;
+        -webkit-column-gap: 0;
+        -moz-column-gap: 0;
         column-gap: 0;
         row-gap: 4rem;
     }
@@ -1331,7 +1497,12 @@ body.disableScroll {
     }
 
     .about__container {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1354,6 +1525,9 @@ body.disableScroll {
     }
 
     .footerActions {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         width: auto;
     }
